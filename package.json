@@ -1,0 +1,22 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "planning todo planner with javascript and javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhmti01/todo-list-app.git"
+  },
+  "author": "Abolfazl Rahmati",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rhmti01/todo-list-app/issues"
+  },
+  "homepage": "https://github.com/rhmti01/todo-list-app#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  }
+}
