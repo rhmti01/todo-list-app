@@ -1,20 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>todo list app</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png?v=3" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png?v=3" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png?v=3" />
+    <link rel="stylesheet" href="/public/build/output.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://tailwindcss.com//favicons/apple-touch-icon.png?v=3" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://tailwindcss.com//favicons/favicon-32x32.png?v=3" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://tailwindcss.com//favicons/favicon-16x16.png?v=3" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 </head>
+<!-- bg-gradient-to-tr from-blue-700 via-blue-800 to-gray-900 -->
 
-<body class=" font-inter  ">
+<body class="font-poppins  bg-main flex items-center justify-center w-full h-screen ">
+
+    <main class="  w-[620px] rounded-xl bg-white shadow-xl flex flex-col  relative ">
+        <h1 class=" text-center font-bold my-9 text-main text-4xl  ">TO-DO APP</h1>
+        <div class="  flex flex-row-reverse  ">
+
+            <!-- selection part (1) -->
+            <div class=" cursor-pointer   basis-[35%] my-3 mx-3 ">
+                <select id="todos"
+                    class=" cursor-pointer bg-white font-medium  text-main text-base rounded-xl duration-75 border-[2px]  border-main focus:ring-0 block w-11/12 p-4   ">
+                    <option   class="  text-left  cursor-pointer mx-4 text-base  font-medium rounded-3xl p-4 bg-white text-main   "  value="all" >All Tasks</option>
+                    <option  class="  text-left  cursor-pointer mx-4 text-base  font-medium rounded-3xl p-4 bg-white text-main   "  value="remaining">Remaining</option>
+                    <option  class="  text-left  cursor-pointer mx-4 text-base  font-medium rounded-3xl p-4 bg-white text-main   "  value="finished">Finished</option>
+                </select>
+            </div>
+
+
+            <!-- input and todo part (2) -->
+            <div class=" relative basis-[65%] ">
+                <div
+                    class=" task-input  w-10/12  flex justify-between items-center my-3 mx-auto rounded-xl duration-75 border-[2px]  border-main  pr-2  pl-4">
+                    <input id="input"
+                        class="text-base text-zinc-800 bg-transparent outline-none focus:ring-0 border-none py-4  basis-4/5 "
+                        type="text" placeholder="Add a new task">
+                    <div id="addBtn"
+                        class=" hover:cursor-pointer  w-9 h-9 flex justify-center items-center bg-main rounded-lg ">
+                        <svg class="w-6 h-6 stroke-white " xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- ul section for todos -->
+                <ul class=" w-9/12 mx-auto my-8 bg-zinc-100 border-main/25 border-[1px] rounded-lg h-52 mt-7  "></ul>
+                
+            </div>
+            
+            <button class=" text-base absolute bottom-7 right-7 p-2 bg-main rounded-md text-white ">Clear all</button>
+        </div>
+            
+
+    </main>
+
+    <script src="//unpkg.com/alpinejs" defer></script>
     <script src="app.js"></script>
 </body>
 

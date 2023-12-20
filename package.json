@@ -4,7 +4,7 @@
   "description": "planning todo planner with javascript and javascript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx tailwindcss -i ./src/tailwind.css -o ./public/build/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/rhmti01/todo-list-app#readme",
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
     "tailwindcss": "^3.3.6"
   }
 }

@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::selection{
+    color: #fff;
+    background: #4438caeb;
+  }
+
+  .task-box::-webkit-scrollbar{
+    width: 8px;
+  }
+  .task-box::-webkit-scrollbar-track{
+    background: #dfdfdf;
+    border-radius: 25px;
+  }
+  .task-box::-webkit-scrollbar-thumb{
+    background: #c7c7c7;
+    border-radius: 25px  ;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+
+
+
+
+
+
+

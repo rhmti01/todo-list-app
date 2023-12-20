@@ -4,10 +4,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['"Inter"']
-      }
+        poppins: ['"Poppins",']
+      },
+      colors: {
+        'main': '#4338CA',
+      },
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    // ...
+  ],
 }
-
