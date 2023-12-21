@@ -4,18 +4,19 @@
 
 ::selection{
     color: #fff;
-    background: #4438caeb;
+    background: #A8763E;
   }
 
   .task-box::-webkit-scrollbar{
     width: 8px;
   }
   .task-box::-webkit-scrollbar-track{
-    background: #dfdfdf;
+    background: #e8e8e8;
     border-radius: 25px;
+    border: 1px solid #a8773e48;
   }
   .task-box::-webkit-scrollbar-thumb{
-    background: #c7c7c7;
+    background: #a8773e90;
     border-radius: 25px  ;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
