@@ -24,10 +24,16 @@
     -o-border-radius: 25px;
 }
 
+#todo-value{
+  max-width: 20ch;
+}
+
+/* .line{
+  text-decoration: line-through;
+  filter: opacity(20%);
+  -webkit-filter: opacity(20%);
+}
 
 
-
-
-
-
+ */
 

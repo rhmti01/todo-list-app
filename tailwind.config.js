@@ -7,7 +7,8 @@ module.exports = {
         poppins: ['"Poppins",']
       },
       colors: {
-        'main': '#A8763E',
+        // 'main': '#A8763E',
+        'main': '#181f1c',
       },
     }
   },

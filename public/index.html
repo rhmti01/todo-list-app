@@ -32,10 +32,10 @@
                         value="all">All Tasks</option>
                     <option
                         class="  text-left  cursor-pointer mx-96 text-base  font-normal rounded-md bg-white text-main   "
-                        value="remaining">Remaining</option>
+                        value="remaining">Uncompleted</option>
                     <option
                         class="  text-left  cursor-pointer mx-96 text-base  font-normal rounded-md bg-white text-main   "
-                        value="finished">Finished</option>
+                        value="finished">Completed</option>
                 </select>
             </div>
 
@@ -43,7 +43,7 @@
             <!-- input and todo part (2) -->
             <div class=" relative basis-[65%] bg-purple-400/  ">
                 <div
-                    class=" task-input  w-10/12  flex justify-between items-center my-3 mx-auto rounded-xl duration-75 border-[2px]  border-main pl-3 pr-2">
+                    class=" task-input  w-10/12  flex justify-between items-center my-3 mx-auto rounded-xl duration-75 border-[2px]  border-main pl-4 pr-3">
                     <input id="input"
                         class="text-base text-zinc-800 bg-transparent outline-none focus:ring-0 border-none py-4  basis-4/5 "
                         type="text" placeholder="Add a new task">
@@ -59,60 +59,21 @@
                 <!-- ul section for todos -->
 
                 <ul
-                    class=" task-box overflow-auto w-10/12 mx-auto my-8 bg-main/20 border-main/25 border-[1px] rounded-lg h-52 mt-7 pt-1 pb-3 ">
-                    <li
-                        class="   mt-2 mb-1 mx-3 bg-white rounded-md  list-none py-3 px-2 text-black font-medium text-[17px] flex items-center justify-between break-words  ">
-                        <span class=" bre   ak-words bg-slate-50 pr-3 ">Lorem ipsum dolor </span>
-                        <div class=" flex justify-end items-center basis-1/3 ">
-                            <input id="link-checkbox" type="checkbox" value=""
-                                class="w-6 h-6 mr-3 rounded-md text-blue-600 bg-gray-100 border-gray-300  focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-2 ">
-                            <svg class="w-6 h-6 stroke-red-700 cursor-pointer " xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                            </svg>
-                        </div>
-                    </li>
-                    <span class="  w-full mx-auto bg-main/20 h-[2px] inline-block "></span>
-                    <li
-                        class="  mt-2 mb-1 mx-3 bg-white rounded-md  list-none py-3 px-2 text-black font-medium text-[17px] flex items-center justify-between break-words  ">
-                        <span class=" break-words bg-slate-50 pr-3 ">Lorem ipsum dolor </span>
-                        <div class=" flex justify-end items-center basis-1/3 ">
-                            <input id="link-checkbox" type="checkbox" value=""
-                                class="w-6 h-6 mr-3 rounded-md text-blue-600 bg-gray-100 border-gray-300  focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-2 ">
-                            <svg class="w-6 h-6 stroke-red-700 cursor-pointer " xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                            </svg>
-                        </div>
-                    </li>
-                    <span class="  w-full mx-auto bg-main/20 h-[2px] inline-block "></span>
-                    <li
-                        class="  mt-2 mb-1 mx-3 bg-white rounded-md  list-none py-3 px-2 text-black font-medium text-[17px] flex items-center justify-between break-words  ">
-                        <span class=" break-words bg-slate-50 pr-3 ">Lorem ipsum dolor </span>
-                        <div class=" flex justify-end items-center basis-1/3 ">
-                            <input id="link-checkbox" type="checkbox" value=""
-                                class="w-6 h-6 mr-3 rounded-md text-blue-600 bg-gray-100 border-gray-300  focus:ring-blue-500 dark:focus:ring-blue-600  focus:ring-2 ">
-                            <svg class="w-6 h-6 stroke-red-700 cursor-pointer " xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                            </svg>
-                        </div>
-                    </li>
+                    class=" task-box overflow-auto w-10/12 mx-auto my-8 bg-main/10 border-main/25 border-[1px] rounded-lg h-52 mt-7 pt-1 pb-3 ">
+
+                    <!-- todos will appear here -->
+
                 </ul>
             </div>
 
             <button
-                class=" text-[15px] md:text-base absolute bottom-4 right-4 md:bottom-7 md:right-7  p-2 bg-main rounded-md text-white ">Clear
+            id="clearAll" class=" text-[15px] md:text-base absolute bottom-4 right-4 md:bottom-7 md:right-7  p-2 bg-main rounded-md text-white ">Clear
                 all</button>
         </div>
 
 
     </main>
 
-    <script src="//unpkg.com/alpinejs" defer></script>
     <script src="app.js"></script>
 </body>
 
