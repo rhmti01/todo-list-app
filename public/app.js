@@ -18,6 +18,10 @@ input.addEventListener("keydown", (e) => {
 
 addTodoBtn.addEventListener("click", addNewTodo)
 
+selectTodo.addEventListener("change" , filterTodo )
+
+
+
 
 // Functions 
 
@@ -61,7 +65,33 @@ function createTodo(todos) {
     const removeBtns = [...document.querySelectorAll("#remove")]
     removeBtns.forEach(btn => btn.addEventListener("click" , removeTodo))
 
+    const checkedBtns = [...document.querySelectorAll("#check")]
+    checkedBtns.forEach(btn => btn.addEventListener("focus" , checkTodo))
+
     // console.log(todos);
+}
+
+
+function filterTodo(e) {
+    let filter = e.target.value ;
+
+    switch (filter) {
+        case "all" : {
+            createTodo(todos)
+            break;
+        }
+        case "remaining" : {
+            const filteredTodos = todos.filter((todo)=> !todo.isChecked )
+            createTodo(filteredTodos)
+            break;
+        }
+        case "finished" : {
+            const filteredTodos = todos.filter((todo)=> todo.isChecked )
+            createTodo(filteredTodos)
+            break;
+        }
+        default : createTodo(todos)
+    }
 }
 
 
@@ -72,3 +102,11 @@ function removeTodo(e) {
 }
 
 
+function checkTodo(e) {
+    let todoId = Number(e.target.dataset.id)
+    let checkTodo = todos.find( (todo) => todo.id == todoId )
+    checkTodo.isChecked =  !checkTodo.isChecked  
+    // document.getElementById("#check").checked = checkTodo.isChecked ;
+    createTodo(todos)
+    console.log(todos);
+}
