@@ -7,9 +7,15 @@ module.exports = {
         poppins: ['"Poppins",']
       },
       colors: {
-        // 'main': '#A8763E',
-        'main': '#181f1c',
+        // 'main':'#fca311' ,
+        'main': '#A8763E',
+        // 'main': '#d69f7e',
+        // 'main': '#c88d6d',
+
       },
+      blur: {
+        xs: '1px',
+      }
     }
   },
   plugins: [

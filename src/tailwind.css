@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-::selection{
-    color: #fff;
-    background: #A8763E;
-  }
+*{
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
 
   .task-box::-webkit-scrollbar{
     width: 8px;
@@ -33,7 +34,3 @@
   filter: opacity(20%);
   -webkit-filter: opacity(20%);
 }
-
-
-
-
