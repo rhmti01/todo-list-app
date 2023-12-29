@@ -1036,6 +1036,10 @@ select {
   isolation: auto;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .float-right {
   float: right;
 }
@@ -1229,10 +1233,6 @@ select {
   height: 6rem;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
 .h-52 {
   height: 13rem;
 }
@@ -1253,12 +1253,12 @@ select {
   height: 100vh;
 }
 
-.w-10\/12 {
-  width: 83.333333%;
+.h-4 {
+  height: 1rem;
 }
 
-.w-4 {
-  width: 1rem;
+.w-10\/12 {
+  width: 83.333333%;
 }
 
 .w-6 {
@@ -1289,6 +1289,50 @@ select {
   width: 100%;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
+}
+
+.w-1\/12 {
+  width: 8.333333%;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[8\] {
+  width: 8;
+}
+
+.w-\[86\] {
+  width: 86;
+}
+
+.w-\[86\%\] {
+  width: 86%;
+}
+
+.w-11 {
+  width: 2.75rem;
+}
+
+.w-\[8\%\] {
+  width: 8%;
+}
+
+.w-\[88\%\] {
+  width: 88%;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -1317,12 +1361,12 @@ select {
   flex-grow: 1;
 }
 
-.basis-1\/4 {
-  flex-basis: 25%;
-}
-
 .basis-4\/5 {
   flex-basis: 80%;
+}
+
+.basis-\[21\%\] {
+  flex-basis: 21%;
 }
 
 .basis-\[65\%\] {
@@ -2322,13 +2366,13 @@ select {
   border-color: rgb(168 118 62 / 0.25);
 }
 
+.border-transparent {
+  border-color: transparent;
+}
+
 .border-stone-700 {
   --tw-border-opacity: 1;
   border-color: rgb(68 64 60 / var(--tw-border-opacity));
-}
-
-.border-transparent {
-  border-color: transparent;
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -2351,17 +2395,12 @@ select {
   background-color: rgb(168 118 62 / var(--tw-bg-opacity));
 }
 
-.bg-main\/10 {
-  background-color: rgb(168 118 62 / 0.1);
-}
-
 .bg-main\/20 {
   background-color: rgb(168 118 62 / 0.2);
 }
 
-.bg-slate-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+.bg-main\/5 {
+  background-color: rgb(168 118 62 / 0.05);
 }
 
 .bg-transparent {
@@ -2462,12 +2501,12 @@ select {
   stroke: #b91c1c;
 }
 
-.stroke-stone-700 {
-  stroke: #44403c;
-}
-
 .stroke-white {
   stroke: #fff;
+}
+
+.stroke-stone-700 {
+  stroke: #44403c;
 }
 
 .object-contain {
@@ -2546,6 +2585,11 @@ select {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pb-14 {
@@ -3036,11 +3080,6 @@ select {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.blur-xs {
-  --tw-blur: blur(1px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .drop-shadow {
   --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -3136,7 +3175,7 @@ select {
   content: var(--tw-content);
 }
 
-*{
+* {
   -webkit-user-select: none;
   /* Safari */
   /* IE 10 and IE 11 */
@@ -3145,33 +3184,27 @@ select {
   /* Standard syntax */
 }
 
-.task-box::-webkit-scrollbar{
+.task-box::-webkit-scrollbar {
   width: 8px;
 }
 
-.task-box::-webkit-scrollbar-track{
+.task-box::-webkit-scrollbar-track {
   background: #e8e8e8;
   border-radius: 25px;
   border: 1px solid #a8773e48;
 }
 
-.task-box::-webkit-scrollbar-thumb{
+.task-box::-webkit-scrollbar-thumb {
   background: #a8773e90;
-  border-radius: 25px  ;
+  border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
 }
 
-#todo-value{
+#todo-value {
   max-width: 20ch;
-}
-
-.line{
-  text-decoration: line-through;
-  filter: opacity(20%);
-  -webkit-filter: opacity(20%);
 }
 
 @media (min-width: 640px) {
@@ -3370,6 +3403,14 @@ select {
     width: auto;
   }
 
+  .md\:w-10 {
+    width: 2.5rem;
+  }
+
+  .md\:w-10\/12 {
+    width: 83.333333%;
+  }
+
   .md\:max-w-4xl {
     max-width: 56rem;
   }
@@ -3392,6 +3433,11 @@ select {
 
   .md\:p-3\.5 {
     padding: 0.875rem;
+  }
+
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .md\:pb-2 {
@@ -3420,5 +3466,9 @@ select {
 @media (min-width: 1280px) {
   .xl\:h-64 {
     height: 16rem;
+  }
+
+  .xl\:w-\[700px\] {
+    width: 700px;
   }
 }

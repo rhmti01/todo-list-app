@@ -2,35 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+* {
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
 }
 
-  .task-box::-webkit-scrollbar{
-    width: 8px;
-  }
-  .task-box::-webkit-scrollbar-track{
-    background: #e8e8e8;
-    border-radius: 25px;
-    border: 1px solid #a8773e48;
-  }
-  .task-box::-webkit-scrollbar-thumb{
-    background: #a8773e90;
-    border-radius: 25px  ;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
+.task-box::-webkit-scrollbar {
+  width: 8px;
 }
 
-#todo-value{
+.task-box::-webkit-scrollbar-track {
+  background: #e8e8e8;
+  border-radius: 25px;
+  border: 1px solid #a8773e48;
+}
+
+.task-box::-webkit-scrollbar-thumb {
+  background: #a8773e90;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+#todo-value {
   max-width: 20ch;
-}
-
-.line{
-  text-decoration: line-through;
-  filter: opacity(20%);
-  -webkit-filter: opacity(20%);
 }

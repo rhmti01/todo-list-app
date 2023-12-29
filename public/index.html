@@ -15,17 +15,17 @@
         rel="stylesheet">
 </head>
 
-<body class="font-poppins  bg-main flex items-center justify-center w-full h-screen px-5 md:mx-auto ">
+<body class="font-poppins  bg-main flex items-center justify-center w-full h-screen px-3 md:mx-auto ">
 
-    <main class=" w-[400px]  md:w-[620px] rounded-xl bg-white shadow-xl flex flex-col  relative mb-9 sm:mb-3 ">
+    <main class=" w-[400px]  md:w-[620px] xl:w-[700px] rounded-xl bg-white shadow-xl flex flex-col  relative mb-9 sm:mb-3 ">
         <h1 class=" text-center font-black my-6 md:my-9 text-main text-[36px] md:text-4xl  ">TO-DO APP</h1>
         <div class="  flex  flex-col md:flex-row-reverse pb-14 md:pb-2 ">
 
             <!-- selection part (1) -->
-            <div
+            <div 
                 class="  bg-yellow-500/ flex justify-center md:block w-full md:w-auto md:basis-[35%] py-3 mx-auto md:mx-3 ">
                 <select id="todos"
-                    class=" bg-white block w-10/12 md:w-11/12 p-4 md:p-3.5 cursor-pointer  font-medium  text-main text-base rounded-xl duration-75 border-[2px]  border-main focus:border-main focus:ring-0   ">
+                    class=" bg-white block w-[88%] md:w-11/12  p-4 md:p-3.5 cursor-pointer  font-medium  text-main text-base rounded-xl duration-75 border-[2px]  border-main focus:border-main focus:ring-0   ">
                     <option
                         class="  text-left  cursor-pointer mx-96 text-base  font-normal rounded-md bg-white text-main   "
                         value="all">All Tasks</option>
@@ -40,9 +40,9 @@
 
 
             <!-- input and todo part (2) -->
-            <div class=" relative basis-[65%] bg-purple-400/  ">
+            <div class=" relative basis-[65%]  bg-purple-400/  ">
                 <div
-                    class=" task-input  w-10/12  flex justify-between items-center my-3 mx-auto rounded-xl duration-75 border-[2px]  border-main pl-4 pr-3">
+                    class=" task-input  w-[88%] md:w-10/12  flex justify-between items-center my-3 mx-auto rounded-xl duration-75 border-[2px]  border-main pl-4 pr-3">
                     <input id="input"
                         class="text-base text-zinc-800 bg-transparent outline-none focus:ring-0 border-none py-4  basis-4/5 "
                         type="text" placeholder="Add a new task">
@@ -58,7 +58,7 @@
                 <!-- ul section for todos -->
 
                 <ul
-                    class=" task-box overflow-auto w-10/12 mx-auto my-8 bg-main/10 border-main/25 border-[2px] rounded-lg h-52 xl:h-64 mt-7 pt-1 pb-3 ">
+                    class=" task-box overflow-auto w-[88%] md:w-10/12 mx-auto my-8 bg-main/5 border-main/25 border-[2px] rounded-lg h-52 xl:h-64 mt-7 pt-1 pb-3 ">
 
                     <!-- todos will appear here -->
 
@@ -72,6 +72,8 @@
 
 
     </main>
+
+    
 
     <script src="app.js"></script>
 </body>
