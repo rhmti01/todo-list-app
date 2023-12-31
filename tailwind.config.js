@@ -4,13 +4,20 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['"Poppins",']
+        nunito: ['"Nunito",']
       },
       colors: {
-        // 'main':'#fca311' ,
-        'main': '#A8763E',
-        // 'main': '#d69f7e',
-        // 'main': '#c88d6d',
+        // 'main': '#A8763E',
+        // 'main':'#fb6f92',
+        // 'main':'#0b090a',
+        // 'main':'#ba181b',
+        // 'main':'#55a630',
+        // 'main':'#4361ee',
+        // 'main':'#e7bc91',
+        // 'main':'#588157',
+        // 'main':'#6c757d',
+        // 'main':'#b9375e',
+        'main':'#ffa200',
 
       },
       blur: {

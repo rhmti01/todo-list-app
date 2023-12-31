@@ -18,11 +18,11 @@
 .task-box::-webkit-scrollbar-track {
   background: #e8e8e8;
   border-radius: 25px;
-  border: 1px solid #a8773e48;
+  border: 1px solid #ffeebe48;
 }
 
 .task-box::-webkit-scrollbar-thumb {
-  background: #a8773e90;
+  background: #9b928890;
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;

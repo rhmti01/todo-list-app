@@ -5,27 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>todo list app</title>
-    <link rel="stylesheet" href="/public/build/output.css">
+    <link rel="stylesheet" href="build/output.css">
     <link rel="apple-touch-icon" sizes="180x180" href="https://tailwindcss.com//favicons/apple-touch-icon.png?v=3" />
     <link rel="icon" type="image/png" sizes="32x32" href="https://tailwindcss.com//favicons/favicon-32x32.png?v=3" />
     <link rel="icon" type="image/png" sizes="16x16" href="https://tailwindcss.com//favicons/favicon-16x16.png?v=3" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-poppins  bg-main flex items-center justify-center w-full h-screen px-3 md:mx-auto ">
+<body class="  font-nunito   bg-main flex items-center justify-center w-full h-screen px-0 md:mx-auto ">
 
-    <main class=" w-[400px]  md:w-[620px] xl:w-[700px] rounded-xl bg-white shadow-xl flex flex-col  relative mb-9 sm:mb-3 ">
-        <h1 class=" text-center font-black my-6 md:my-9 text-main text-[36px] md:text-4xl  ">TO-DO APP</h1>
+    <main class=" w-[400px]  md:w-[620px] xl:w-[700px] rounded-xl bg-white shadow-xl flex flex-col mx-4   relative mb-9 sm:mb-3 ">
+        <h1 class="font-nunito  text-center font-black my-6 text-main text-[40px] md:text-[45px]  ">TO-DO APP</h1>
         <div class="  flex  flex-col md:flex-row-reverse pb-14 md:pb-2 ">
 
             <!-- selection part (1) -->
             <div 
-                class="  bg-yellow-500/ flex justify-center md:block w-full md:w-auto md:basis-[35%] py-3 mx-auto md:mx-3 ">
+                class="font-nunito   bg-yellow-500/ flex justify-center md:block w-full md:w-auto md:basis-[35%] py-3 mx-auto md:mx-3 ">
                 <select id="todos"
-                    class=" bg-white block w-[88%] md:w-11/12  p-4 md:p-3.5 cursor-pointer  font-medium  text-main text-base rounded-xl duration-75 border-[2px]  border-main focus:border-main focus:ring-0   ">
+                    class=" bg-white block w-[92%] sm:w-[88%] md:w-11/12  p-4 md:p-3.5 cursor-pointer  font-medium  text-main text-base rounded-xl duration-75 border-[2px]  border-main focus:border-main focus:ring-0   ">
                     <option
                         class="  text-left  cursor-pointer mx-96 text-base  font-normal rounded-md bg-white text-main   "
                         value="all">All Tasks</option>
@@ -40,12 +39,12 @@
 
 
             <!-- input and todo part (2) -->
-            <div class=" relative basis-[65%]  bg-purple-400/  ">
+            <div class="font-nunito  relative basis-[65%]  bg-purple-400/  ">
                 <div
-                    class=" task-input  w-[88%] md:w-10/12  flex justify-between items-center my-3 mx-auto rounded-xl duration-75 border-[2px]  border-main pl-4 pr-3">
+                    class=" task-input  w-[92%] sm:w-[88%] md:w-10/12  flex justify-between items-center my-3 mx-auto rounded-xl duration-75 border-[2px]  border-main pl-4 pr-3">
                     <input id="input"
                         class="text-base text-zinc-800 bg-transparent outline-none focus:ring-0 border-none py-4  basis-4/5 "
-                        type="text" placeholder="Add a new task">
+                        type="text" placeholder="Add a new task . . .">
                     <div id="addBtn"
                         class=" hover:cursor-pointer  w-9 h-9 flex justify-center items-center bg-main rounded-lg ">
                         <svg class="w-6 h-6 stroke-white " xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -58,7 +57,7 @@
                 <!-- ul section for todos -->
 
                 <ul
-                    class=" task-box overflow-auto w-[88%] md:w-10/12 mx-auto my-8 bg-main/5 border-main/25 border-[2px] rounded-lg h-52 xl:h-64 mt-7 pt-1 pb-3 ">
+                    class=" task-box overflow-auto w-[92%] sm:w-[88%] md:w-10/12 mx-auto my-8 bg-main/5 border-main/25 border-[2px] rounded-lg  h-52 xl:h-64 mt-7 pt-1 pb-3 ">
 
                     <!-- todos will appear here -->
 
