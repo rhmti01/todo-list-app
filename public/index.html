@@ -11,17 +11,19 @@
     <link rel="icon" type="image/png" sizes="16x16" href="https://tailwindcss.com//favicons/favicon-16x16.png?v=3" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="  font-nunito   bg-main flex items-center justify-center w-full h-screen px-0 md:mx-auto ">
 
-    <main class=" w-[400px]  md:w-[620px] xl:w-[700px] rounded-xl bg-white shadow-xl flex flex-col mx-4   relative mb-9 sm:mb-3 ">
+    <main
+        class=" w-[400px]  md:w-[620px] xl:w-[700px] rounded-xl bg-white shadow-xl flex flex-col mx-4   relative mb-9 sm:mb-3 ">
         <h1 class="font-nunito  text-center font-black my-6 text-main text-[40px] md:text-[45px]  ">TO-DO APP</h1>
         <div class="  flex  flex-col md:flex-row-reverse pb-14 md:pb-2 ">
 
             <!-- selection part (1) -->
-            <div 
+            <div
                 class="font-nunito   bg-yellow-500/ flex justify-center md:block w-full md:w-auto md:basis-[35%] py-3 mx-auto md:mx-3 ">
                 <select id="todos"
                     class=" bg-white block w-[92%] sm:w-[88%] md:w-11/12  p-4 md:p-3.5 cursor-pointer  font-medium  text-main text-base rounded-xl duration-75 border-[2px]  border-main focus:border-main focus:ring-0   ">
@@ -58,21 +60,35 @@
 
                 <ul
                     class=" task-box overflow-auto w-[92%] sm:w-[88%] md:w-10/12 mx-auto my-8 bg-main/5 border-main/25 border-[2px] rounded-lg  h-52 xl:h-64 mt-7 pt-1 pb-3 ">
-
                     <!-- todos will appear here -->
 
                 </ul>
             </div>
-
-            <button
-            id="clearAll" class=" text-[15px] md:text-base absolute bottom-4 right-4 md:bottom-7 md:right-7  p-2 bg-main rounded-md text-white ">Clear
+            <button id="clearAll"
+                class=" text-[15px] md:text-base absolute bottom-4 right-4 md:bottom-7 md:right-7  p-2 bg-main rounded-md text-white ">Clear
                 all</button>
         </div>
 
-
     </main>
 
-    
+
+    <!-- modal on the webpage with javascript  -->
+    <div id="shadow" class=" hidden cursor-pointer  inset-0 absolute z-20 w-full h-screen bg-stone-900/40 backdrop-blur-md   "></div>
+    <div id="modaltext" class=" hidden z-40 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2    ">
+        <div
+            class=" flex items-center justify-around border-2 border-stone-300  font-inter bg-white p-6 w-80 rounded-xl ">
+            <input id="text" autofocus="autofocus" 
+                class=" border-2 border-stone-300 px-3 py-2 rounded-xl outline-none focus:shadow-lg  focus:border-blue-800 "
+                type="text" name="" />
+            <div class=" hover:cursor-pointer hover:bg-green-100 duration-300  border-2 border-green-700 w-9 h-9 flex justify-center items-center rounded-lg ">
+                <svg id="cancelBtn"  class="w-6 h-6   stroke-green-700 " xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /> 
+            </svg>
+            </div>
+        </div>
+    </div>
+
 
     <script src="app.js"></script>
 </body>
