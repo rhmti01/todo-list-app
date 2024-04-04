@@ -22,7 +22,10 @@ module.exports = {
       },
       blur: {
         xs: '1px',
-      }
+      },
+      screens: {
+        'ss': '537px',
+      },
     }
   },
   plugins: [
