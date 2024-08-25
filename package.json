@@ -4,7 +4,7 @@
   "description": "planning todo planner with javascript and javascript",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/tailwind.css -o ./public/build/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/build/output.css --watch"
   },
   "repository": {
     "type": "git",
